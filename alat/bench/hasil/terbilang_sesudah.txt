@@ -1,0 +1,16 @@
+FLASH 8396
+RAM 464
+BENCH cetakTerbilang_125 2790.8
+BENCH cetakTerbilang_1250000 3882.2
+BENCH cetakTerbilang_2147483647 9470.0
+BENCH cetakTerbilang_int64 19023.0
+BENCH terbilang_buf_1250000 5408.4
+BENCH terbilang_buf_int64 27469.0
+BENCH formatAngka_125 1543.0
+BENCH formatAngka_1250000 1939.0
+BENCH formatAngka_2147483647 2564.4
+BENCH formatAngka_int64 5317.0
+BENCH formatRupiah_125 1679.0
+BENCH formatRupiah_1250000 2075.4
+BENCH formatRupiah_2147483647 2700.8
+BENCH formatRupiah_int64 5448.0

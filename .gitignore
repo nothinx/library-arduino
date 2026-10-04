@@ -1,0 +1,11 @@
+# Repo katalog: hanya README, LICENSE, dan alat yang aman dipublikasikan.
+# Setiap library punya repo sendiri.
+/*
+!/README.md
+!/LICENSE
+!/.gitignore
+!/alat/
+/alat/arduino-lint.exe
+/alat/riset/
+/alat/bench/pesaing/
+/alat/bench/out/

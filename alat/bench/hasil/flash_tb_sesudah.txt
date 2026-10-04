@@ -1,0 +1,9 @@
+kosong FLASH 602 kosong RAM 25 
+cetakTerbilang FLASH 2034 cetakTerbilang RAM 41 
+terbilang_buf FLASH 2124 terbilang_buf RAM 237 
+formatAngka FLASH 1562 formatAngka RAM 37 
+formatRupiah FLASH 1604 formatRupiah RAM 37 
+
+currency FLASH 1078 currency RAM 41 
+currency64 FLASH 1518 currency64 RAM 57 
+print_long FLASH 932 print_long RAM 41 
