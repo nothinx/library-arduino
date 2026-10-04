@@ -17,6 +17,19 @@ klaim "unggul" punya angka atau uji yang bisa diulang.
 
 Jika satu target "wajib menang" tidak tercapai, jangan rilis: perbaiki, atau tulis alasannya dan minta keputusan.
 
+## Datasheet (wajib, sebelum menulis kode)
+
+1. Unduh datasheet resmi pabrikan chip (bukan blog/toko) ke `alat/riset/datasheet/<chip>_<pabrikan>.pdf`
+   (tidak dipublikasikan) dan ekstrak teksnya ke `.txt` di sebelahnya.
+2. Di `extras/riset.md` repo library: tautan datasheet resmi, lalu tabel **parameter yang dipakai kode**
+   (timing, rentang, format data, waktu settling, mode daya) dengan nomor halaman/tabel datasheet.
+3. Setiap konstanta di `src/` yang berasal dari datasheet diberi komentar sumbernya
+   (mis. `// datasheet HX711 hlm. 5: PD_SCK tinggi > 60 µs = power down`).
+4. Sensor tiruan di `extras/test` meniru perilaku datasheet (timing, saturasi, settling), dan ada uji
+   yang gagal jika batas datasheet dilanggar (mis. pulsa clock terlalu panjang).
+5. README: bagian **Spesifikasi sensor** ringkas (rentang, resolusi, kecepatan sampel, tegangan) dengan tautan
+   datasheet, dan catatan bila modul di pasaran berbeda dari datasheet (mis. pin RATE terhubung ke GND = 10 SPS).
+
 ## Riset berbasis issue (sebelum menulis kode)
 
 1. Ambil 2–3 pesaing teratas dari index (nama/sentence/paragraph memuat nama chip). Unduh source rilisnya ke
